@@ -32,7 +32,7 @@ h1, h2, button {
 .box > p {
   color: paleturquoise;
 } */
-.card-dark {
+/* .card-dark {
   background: rgb(189, 182, 169);
 }
 .Item {
@@ -89,4 +89,68 @@ a[class$="big"] {
 }
 .big-tex::before {
   content:'$$$';
+} */
+#test:target {
+  color: red;
+}
+.link:link {
+  color: red;
+}
+.link:hover {
+  color: green;
+}
+
+.link:active {
+  color: rgb(130, 24, 196);
+}
+.card:active {
+  background-color: blueviolet;
+}
+input {
+  background-color: grey;
+}
+input:focus {
+  background-color: red;
+}
+.card:focus-within {
+  background-color: red;
+}
+.card:lang(en) > span::after {
+  content: '(en)';
+}
+button {
+  background-color: orange;
+}
+button:enabled {
+  background-color: aqua;
+}
+button:disabled {
+  background-color: antiquewhite;
+}
+.inp:read-write {
+  background-color: blue;
+}
+.inp:read-only {
+  background-color: aquamarine;
+}
+input[type='checkbox']:checked ~ span {
+  background: orchid;
+}
+.valid:valid {
+  background: yellow;
+}
+.valid:invalid {
+  background: goldenrod;
+}
+.valid:optional {
+  background: burlywood;
+}
+.number:focus {
+  background: grey;
+}
+.number:in-range {
+  background: khaki;
+}
+input:placeholder-shown ~ span {
+  background: plum;
 }
