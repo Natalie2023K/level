@@ -1,0 +1,156 @@
+/* :root {
+background: purple;
+}
+html {
+  max-width: 720px;
+  background: blue;
+}
+
+body {
+  background: #fff;
+}
+
+* {
+   color: red;
+}
+
+h1 {
+  color: green;
+}
+h1 {
+  color: blue
+}
+.box {
+  background: gray;
+}
+#user:{
+  color: blue;
+}
+h1, h2, button {
+  color:aqua;
+}
+.box > p {
+  color: paleturquoise;
+} */
+/* .card-dark {
+  background: rgb(189, 182, 169);
+}
+.Item {
+  color:aqua;
+}
+.Item:first-of-type {
+  color:olive;
+}
+.Item:only-of-type {
+  color: brown;
+}
+.Item:nth-of-type(2n) {
+  color:rgb(146, 39, 125);
+}
+p:not(.Item) {
+  color: yellowgreen;
+}
+p:empty {
+  height: 10px;
+  background: red;
+}
+.input-dark {
+  background: rgb(244, 243, 241);
+}
+.input-dark[required] {
+  background: rgb(179, 191, 17);
+}
+.input-dark[type="number"] {
+  background: rgb(12, 187, 218);
+}
+.small-img[alt~="small"] {
+  height: 500px;
+}
+a[rel~="external"] {
+  color:rgb(12, 236, 127);
+}
+button[class|="btn"] {
+  background: red;
+}
+a[class^="btn"] {
+  background: rgb(21, 16, 16);
+}
+a[class$="big"] {
+  background: rgb(105, 69, 89);
+}
+.btn::first-letter {
+  color:rgb(24, 23, 23);
+}
+.big-text::first-line {
+  color:rgb(71, 50, 134);
+}
+.input-dark::placeholder {
+  color:rgb(189, 186, 194) ;
+}
+.big-tex::before {
+  content:'$$$';
+} */
+#test:target {
+  color: red;
+}
+.link:link {
+  color: red;
+}
+.link:hover {
+  color: green;
+}
+
+.link:active {
+  color: rgb(130, 24, 196);
+}
+.card:active {
+  background-color: blueviolet;
+}
+input {
+  background-color: grey;
+}
+input:focus {
+  background-color: red;
+}
+.card:focus-within {
+  background-color: red;
+}
+.card:lang(en) > span::after {
+  content: '(en)';
+}
+button {
+  background-color: orange;
+}
+button:enabled {
+  background-color: aqua;
+}
+button:disabled {
+  background-color: antiquewhite;
+}
+.inp:read-write {
+  background-color: blue;
+}
+.inp:read-only {
+  background-color: aquamarine;
+}
+input[type='checkbox']:checked ~ span {
+  background: orchid;
+}
+.valid:valid {
+  background: yellow;
+}
+.valid:invalid {
+  background: goldenrod;
+}
+.valid:optional {
+  background: burlywood;
+}
+.number:focus {
+  background: grey;
+}
+.number:in-range {
+  background: khaki;
+}
+input:placeholder-shown ~ span {
+  background: plum;
+}
