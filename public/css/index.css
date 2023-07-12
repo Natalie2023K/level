@@ -9,15 +9,41 @@
 }
 #test {
     color: inherit;
-    text-align: center;
+    /* text-align: center; */
 	letter-spacing: 10px;
 }
 span {
-    text-align: center;
+    /* text-align: center; */
     text-transform: uppercase;
 	text-decoration: underline red;
 }
 span:hover {
 	text-decoration-line: line-through;
 	text-decoration-style: wavy;
+}
+ * {
+font-family: fantasy;	
+font-size: 16px;
+font-weight: 900;
+font-style: italic;
+font-display: swap;
+}
+span {
+	font-size: larger;
+	font-weight: lighter;
+	font-style: oblique;
+}
+.test {
+	display: none;
+}
+.block {
+	display: block;
+	margin: auto;
+	background-color: rgb(86, 86, 149);
+	/* width: 100px;
+	height: min-content; */
+	min-height: 100px;
+	max-height: -content;
+	max-width: min-content;
+	min-width: min-content;
 }
