@@ -1,0 +1,70 @@
+<header class="header">
+			
+				{{>logo}}
+			
+
+			<nav class="header_nav">
+          <div class="header_nav_right">
+	      {{>nav list=header}}
+           </div>
+			</nav>
+			</header>
+			{{#with main}}
+			<div class="main">
+				<img src="{{image}}" alt="Hero image" class="img_main">
+				<div class="main_content">
+					<h1 class="main_title">{{heading}}</h1>
+					<p class="main_text">{{descriotion}}</p>
+					<a href="{{href}}" class="main_button">{{button}}</a>
+				</div>
+				
+				<main class="featured">
+					{{#each featured}}
+					<div class="card">
+						<div class="card_content">
+							<img src="{{photo}}" alt="card image" class="card_image">
+						<h2 class="card_title">{{heading}}</h2>
+						<p class="card_text">{{info}}</p>
+						</div>
+						<a href="{{linkUrl}}" class="card_link">{{linkText}}</a>
+
+					</div>
+					{{/each}}
+				</main>
+				
+
+			</div>
+			{{/with}}
+			
+
+		{{!-- <div class="blog">
+			{{#each blog}}
+			{{> cardBlog data=this}}
+			{{/each}}
+		</div> --}}
+         {{!-- {{#with form}}
+		<div class="form">
+			<div class="form_content">
+				<h3 class="form_title">{{title}}</h3>
+				<p class="form_info">{{info}}</p>
+
+			</div>
+			<div class="form_action">
+				<a class="button form_button" href="{{href}}">{{button}}</a>
+			</div>
+		</div>
+			{{/with}} --}}
+		<footer class="footer">
+			<div class="">
+             {{>logo}}
+           <span class="footer_copyright">Copyright 2023-2024</span>
+		   
+			</div>
+			{{#each footer}}
+			<div class="">
+				<span class="footer_title">{{title}}</span>
+				{{>nav list=links isVertical=true}}
+			</div>
+			{{/each}}
+		</footer>
+	
