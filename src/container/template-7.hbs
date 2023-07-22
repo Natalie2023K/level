@@ -1,0 +1,45 @@
+<header class="header">
+	{{>headerDark}}
+</header>
+{{!--  --}}
+<div class="header_second">
+	<div class="logo2">
+		<span class="badge2">Ad</span>
+		<p class="header_second_text">{{header.ad.text}} - {{header.ad.url}}</p>
+	</div>
+	
+	<p class="users">User Online : {{header.userOnline}}</p>
+
+</div>
+<div class="hero">
+	{{#with hero}}
+	<div class="hero_card">
+		<h1 class="hero_title">{{title}}</h1>
+	    <p class="hero_text">{{description}}</p>
+	
+	<button url="{{button.url}}" class="hero_button">{{button.text}}</button>
+	</div>
+	{{/with}}
+</div>
+<div class="frame">
+	{{#with about}}
+	<div class="frame_card">
+		<h2 class="about_title">{{heading}}</h2>
+	<p class="about_text">{{info}}</p>
+	</div>
+	{{/with}}
+</div>
+<section>
+	<div class="articles">
+		<h4 class="articles_title">Our Articles</h4>
+		<p class="articles_text">View All</p>
+	</div>
+	<div class="articles_info">
+		{{#each articles}}
+		{{>cardDark data=this}}
+		{{/each}}
+	</div>
+</section>
+<footer class="footer">
+	{{>footerDark}}
+</footer>

@@ -1,0 +1,15 @@
+{{#with footer}}
+	<div class="footer_pages">
+		<p class="footer_name">{{copyright}}</p>
+	<div class="pages">
+		<div class="nav {{#if isVertical}}nav_vertical{{else}}nav_inLine{{/if}}">
+		{{#each pages}}
+		
+	<a href="{{path}}" class="pages_link">{{name}}</a>
+	{{/each}}
+		
+	
+</div>
+	</div>
+	</div>
+	{{/with}}
