@@ -37,52 +37,41 @@ body {
 
 
 }
-.page {
-display: grid;
-
-}
 @layer component {
-	.page_section {
-		display: flex;
-		justify-content: center;
-	}
-}
-.page_content {
-	padding:var(--spacig-3);
-	width: 100%;
-	max-width: 1200px;
-}
-	
-	
-
-.hero_section {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: 200px;
-	
-	
-	height: 60vh;
-	min-height: 680px;
-}
-.hero {
-	display: flex;
-	height: 100%;
-	align-items: center;
-	
-}
-.hero_content {
-	display: grid;
-	gap: var(--spacing-5);
-	max-width: 425px;
-	color: var(--color-black);
-	position: relative;
-}
-.hero_image {
-	position: absolute;
-	left: 560px;
-	top:0;
-}
+    .page {
+        display: grid;
+    }
+    .hero_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 200px;
+        min-height: 600px;
+    }
+    .page_content {
+        padding: var(--spacig-3);
+        width: 100%;
+    }
+ 
+ .hero {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+ }
+ .hero_content {
+    display: grid;
+    gap: var(--spacing-5);
+    max-width: 425px;
+    color: var(--color-black);
+    position: relative;
+ }
+ .hero_image {
+    position: absolute;
+    left: 560px;
+    top: 0;
+ }
+ }
 @media all and (1260px <= width) {
 	.page_content {
 	
