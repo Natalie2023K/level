@@ -413,16 +413,21 @@
 	line-height: 130%;
 	padding-left: 3px;
 }
+.exp_text {
+	height: 125px;
+	
+}
 .link {
 	
-	padding-top: 70px;
+	
 	display: flex;
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-bottom: 0;
-	margin-top: auto;
+	
+	margin-top: 60px;
 	justify-content: space-between;
 }
+
 .link_card {
 	color: #1264A3;
 	text-decoration: none;
